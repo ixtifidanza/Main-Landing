@@ -1,30 +1,91 @@
 .header {
     background-color: #f5f5f5;
-   &__block {
-       padding-top: 50px;
-   }
-   &__menu {
+
+    &__block {
+        padding-top: 50px;
+    }
+
+    &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-   }
-   &__logo {
-       border: 2px solid #706b73;
-       padding: 5px 7px;
-   }
-   &__title img {
-       text-align: center;
-       margin-top: 145px 0;
-   }
-   &-msg {
-       background-color: #fff;
-   }
-   &-msg {
-       width: 370px;
-       height: 389px;
-       border-radius: 2px;
-   }
-   input {
-       border: none;
-   }
+    }
+
+    &__logo {
+        border: 2px solid #706b73;
+        padding: 5px 7px;
+    }
+
+    &__content {
+        margin-top: 140px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 145px 0;
+        font-size: 30px;
+    }
+
+    &-msg {
+        padding: 30px 38px 0;
+        margin-top: 100px;
+        background-color: #fff;
+        width: 370px;
+        height: 389px;
+        border-radius: 2px;
+        box-shadow: 0 0 19px -3px rgb(77, 77, 104);
+
+        &__title {
+            text-align: center;
+        }
+
+        h4 {
+            color: #797979;
+        }
+    }
+
+    &__input input {
+        display: block;
+        padding-bottom: 5px;
+        margin-top: 35px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid grey !important;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__textarea {
+        margin-top: 35px;
+        display: block;
+        width: 100%;
+        height: 85px;
+
+        border: none;
+        resize: none;
+        border-bottom: 1px solid grey !important;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    &__btn {
+        display: block;
+        width: 238px;
+        height: 55px;
+        color: #fff;
+        border: none;
+        border-radius: 27px;
+        background-color: #ff5c36;
+        margin: 20px auto 15px;
+        cursor: pointer;
+
+        img {
+            margin-left: 20px;
+        }
+    }
 }

@@ -12,3 +12,42 @@ body {
     width: 1150px;
     margin: 0 auto;
 }
+.title {
+    text-align: center;
+    padding: 30px 0 0;
+    font-size: 30px;
+    
+}
+.title--red {
+    color: #fc7254;
+}
+.title--grey {
+    color: #565656;
+}
+.btn {
+        position: absolute; 
+        bottom: -20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 228px;
+        height: 55px;
+
+        border: none;
+        border-radius: 27px;
+        cursor: pointer;
+
+        background-color: #fff;
+        box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
+}
+
+
+.text {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MYRIADPRO-REGULAR';
+    line-height: 1.5;
+    color: #a1a1a1;
+    margin-top: 20px;
+}

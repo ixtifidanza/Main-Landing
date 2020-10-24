@@ -10,6 +10,9 @@
 }
 
 
-@import './base';
-@import './fonts.scss';
-@import './blocks/header';
+@import 'base';
+@import 'fonts.scss';
+@import 'blocks/header';
+@import 'blocks/working';
+@import 'blocks/featured';
+@import 'blocks/services';

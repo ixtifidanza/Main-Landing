@@ -14,6 +14,51 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    text-align: center;
+    padding: 30px 0 0;
+    font-size: 30px;
+}
+
+.title--red {
+    color: #fc7254;
+}
+
+.title--grey {
+    color: #565656;
+}
+
+.btn {
+    position: absolute;
+    bottom: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 228px;
+    height: 55px;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
+}
+
+.text {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MYRIADPRO-REGULAR';
+    line-height: 1.5;
+    color: #a1a1a1;
+    margin-top: 20px;
+}
+
 @font-face {
     font-family: "OpenSans";
   font-display: swap;
@@ -27,6 +72,14 @@ body {
   font-display: swap;
   src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "MyRiadPro";
+  font-display: swap;
+  src: url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("../fonts/MYRIADPRO-REGULAR.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -55,21 +108,271 @@ body {
     padding: 5px 7px;
 }
 
-.header__title img {
+.header__content {
+    margin-top: 140px;
+}
+
+.header__title {
     text-align: center;
     margin-top: 145px 0;
+    font-size: 30px;
 }
 
 .header-msg {
+    padding: 30px 38px 0;
+    margin-top: 100px;
     background-color: #fff;
-}
-
-.header-msg {
     width: 370px;
     height: 389px;
     border-radius: 2px;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
 }
 
-.header input {
+.header-msg__title {
+    text-align: center;
+}
+
+.header-msg h4 {
+    color: #797979;
+}
+
+.header__input input {
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 35px;
+    width: 100%;
     border: none;
+    border-bottom: 1px solid grey !important;
+}
+
+.header__input input:focus {
+    outline: none;
+}
+
+.header__textarea {
+    margin-top: 35px;
+    display: block;
+    width: 100%;
+    height: 85px;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid grey !important;
+}
+
+.header__textarea:focus {
+    outline: none;
+}
+
+.header__btn {
+    display: block;
+    width: 238px;
+    height: 55px;
+    color: #fff;
+    border: none;
+    border-radius: 27px;
+    background-color: #ff5c36;
+    margin: 20px auto 15px;
+    cursor: pointer;
+}
+
+.header__btn img {
+    margin-left: 20px;
+}
+
+.working {
+    padding-bottom: 100px;
+}
+
+.working__title {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
+
+.working__title h2 {
+    color: #565656;
+}
+
+.working__subtitle {
+    margin-top: 5px;
+}
+
+.working__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 120px 0 140px;
+}
+
+.working__card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 300px;
+    padding: 51px 0 70px;
+    margin-left: 35px;
+    background-color: #4eb2f7;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
+}
+
+.working__card:nth-child(2) {
+    background-color: #c049f8;
+}
+
+.working__card:nth-child(3) {
+    background-color: #817eff;
+}
+
+.working__card:nth-child(4) {
+    background-color: #f74770;
+}
+
+.working__name {
+    margin: 20px 0;
+    font-family: 'OpenSans';
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.working__subtitle {
+    color: #a1a1a1;
+    text-align: center;
+}
+
+.working__text {
+    color: #fff;
+    font-family: 'OpenSans';
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.working__button {
+    position: absolute;
+    bottom: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 228px;
+    height: 55px;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
+}
+
+.working__button p {
+    margin-left: 20px;
+}
+
+.featured {
+    background-color: #f5f5f5;
+}
+
+.featured__content {
+    padding: 112px 0 120px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.featured__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.featured__card {
+    margin-right: 15px;
+    width: 350px;
+    background-color: #fc7254;
+    height: 355px;
+    margin-bottom: 20px;
+}
+
+.services__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 140px;
+}
+
+.services__card {
+    width: 100px;
+    padding: 25px;
+    padding-bottom: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
+    margin-bottom: 10px;
+}
+
+.services__card:nth-child(2) {
+    padding-top: 15px;
+}
+
+.services__product {
+    font-size: 30px;
+    font-family: 'MyRiadPro';
+    font-weight: 400;
+    color: #565656;
+    text-align: center;
+}
+
+.services__button {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 228px;
+    height: 55px;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 19px -3px #4d4d68;
+    box-shadow: 0 0 19px -3px #4d4d68;
+}
+
+.services__button p {
+    margin-left: 20px;
 }

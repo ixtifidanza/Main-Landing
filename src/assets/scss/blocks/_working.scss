@@ -1,0 +1,86 @@
+.working {
+    padding-bottom: 100px;
+    &__title {
+        text-align: center;
+        margin-top: 150px;
+        font-size: 30px;
+        h2 {
+            color: #565656;
+        }
+    }
+    &__subtitle {
+        margin-top: 5px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 120px 0 140px;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        padding: 51px 0 70px;
+        margin-left: 35px;
+
+        background-color: #4eb2f7;
+        box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
+
+        }
+        &__card:nth-child(2) {
+            background-color: #c049f8;
+        }
+        &__card:nth-child(3) {
+            background-color: #817eff;
+        }
+        &__card:nth-child(4) {
+            background-color: #f74770;
+        }
+    
+    &__name {
+        margin: 20px 0;
+
+        font-family: 'OpenSans';
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__subtitle  {
+        color: #a1a1a1;
+        text-align: center;
+    }
+    &__text {
+        color: #fff;
+        font-family: 'OpenSans';
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    &__button {
+        position: absolute;
+        bottom: -20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 228px;
+        height: 55px;
+
+        border: none;
+        border-radius: 27px;
+        cursor: pointer;
+
+        background-color: #fff;
+        box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
+
+        & p {
+            margin-left: 20px;
+        }
+
+    }
+}
