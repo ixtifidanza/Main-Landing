@@ -1,4 +1,32 @@
 .footer {
+    &__btn {
+        display: block;
+        width: 238px;
+        height: 55px;
+        
+        margin: 0 auto;
+        margin-top: 45px;
+        
+        
+        border: none;
+        border-radius: 35px;
+        
+
+        background-color: #fff;
+        box-shadow: 0 0 15px -10px  rgb(77, 77, 104);
+        
+
+        cursor: pointer;
+
+        
+    }
+    &__social {
+        
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 50px 0;
+    }
     &__social a{
         background-color: #d3d3d3;
         border-radius: 50%;
@@ -8,11 +36,21 @@
         width: 60px;
         height: 60px;
         align-items: center;
+
+        margin-left: 10px;
+
+        transition: 0.2s linear;
+
+        &:hover {
+            background-color: #ff6e47;
+        }
+    }
+    &__copyright {
+        margin-left: 25px;
+        color: #ababab;
     }
 
-    &__social a:hover {
-        background-color: #ff6e47;
-    }
+   
 }
     
        
