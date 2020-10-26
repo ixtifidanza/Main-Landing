@@ -1,0 +1,9 @@
+.links {
+    background-color: #fbfbfb;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 76px 0 96px;
+    }
+}

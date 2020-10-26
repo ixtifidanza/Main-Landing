@@ -1,0 +1,19 @@
+.footer {
+    &__social a{
+        background-color: #d3d3d3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+
+        width: 60px;
+        height: 60px;
+        align-items: center;
+    }
+
+    &__social a:hover {
+        background-color: #ff6e47;
+    }
+}
+    
+       
+    

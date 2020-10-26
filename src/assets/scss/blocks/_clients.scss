@@ -1,0 +1,61 @@
+.clients {
+    padding: 139px 0;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 86px;
+        
+        
+    }
+    &__card {
+        width: 535px;
+
+        
+      
+        box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
+        position: relative;
+
+        &:last-child {
+            box-shadow: none;
+            border: 2px solid #cecece;
+            margin-left: 30px;
+
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -55px ;
+            left: 215px;
+            width: 100px;
+            height: 100px;
+            
+            border: 1px solid #cecece;
+            border-radius: 50px;
+            
+            
+
+            background-color: #fff;
+        }
+    }
+
+    &__desc {
+        font-family: 'MyriadPro';
+        padding: 90px 40px 14px;
+        text-align: center;
+    }
+    &__star {
+        text-align: center;
+        margin: 15px 0;
+    }
+    &__author {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+
+        & p {
+            font-weight: bold;
+        }
+    }
+}   
