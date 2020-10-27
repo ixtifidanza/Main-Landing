@@ -1,18 +1,9 @@
 .clients {
     padding: 139px 0;
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 86px;
-        
-        
-    }
+   
     &__card {
         width: 535px;
-
-        
-      
+        margin-top: 100px;
         box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
         position: relative;
 
@@ -32,7 +23,7 @@
             height: 100px;
             
             border: 1px solid #cecece;
-            border-radius: 50px;
+            border-radius: 50%;
             
             
 

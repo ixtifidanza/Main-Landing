@@ -180,6 +180,45 @@ body {
     margin-left: 20px;
 }
 
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #706b73;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger__item:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #706b73;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    top: -8px;
+}
+
+.burger__item:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #706b73;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    bottom: -8px;
+}
+
 .working {
     padding-bottom: 100px;
 }
@@ -501,21 +540,9 @@ body {
     padding: 139px 0;
 }
 
-.clients__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 86px;
-}
-
 .clients__card {
     width: 535px;
+    margin-top: 100px;
     -webkit-box-shadow: 0 0 19px -3px #4d4d68;
     box-shadow: 0 0 19px -3px #4d4d68;
     position: relative;
@@ -536,7 +563,7 @@ body {
     width: 100px;
     height: 100px;
     border: 1px solid #cecece;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: #fff;
 }
 

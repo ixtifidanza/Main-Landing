@@ -12,3 +12,19 @@ var swiper = new Swiper('.swiper-container', {
 
     
 });
+
+
+  $ (function () {
+
+
+    let navToggle = $('#navToggle');
+
+
+    
+  navToggle.on('click', function(event) {
+  event.preventDefault();
+  nav.toggleClass('show');
+
+    
+  });
+
