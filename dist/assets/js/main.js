@@ -1,16 +1,14 @@
-$(function () {
+var swiper = new Swiper('.swiper-container', {
+    // slidesPerView: 1,
+    // spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    // loopFillGroupWithBlank: true,    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-    let = slider ("#clientsSlider");
-
-
-    slider.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: false,
-        
-    });
-
-    
     
 });

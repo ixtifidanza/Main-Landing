@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Main Landing</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -206,46 +206,46 @@
     </section>
 
     <section class="team">
-       
-            <div class="container">
-                <div class="team__title title">
-                    <h2 class="title--red">Team
-                        <span class="title--grey">Chinen & Skills</span>
-                    </h2>
+
+        <div class="container">
+            <div class="team__title title">
+                <h2 class="title--red">Team
+                    <span class="title--grey">Chinen & Skills</span>
+                </h2>
+            </div>
+            <div class="team__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga
+                provident Libero.</div>
+
+            <div class="team__item">
+                <div class="team__card">
+                    <div class="team__name">
+                        <h4>Bedi Manos</h4>
+                        <p>UI/UX Parena</p>
+                    </div>
                 </div>
-                <div class="team__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga
-                    provident Libero.</div>
+                <div class="team__card">
+                    <div class="team__progress">
+                        <img src="assets/img/team-progress.png" alt="">
 
-                <div class="team__item">
-                    <div class="team__card">
-                        <div class="team__name">
-                            <h4>Bedi Manos</h4>
-                            <p>UI/UX Parena</p>
+                        <h4>Al Rayhan</h4>
+                        <p>UI/UX Parena</p>
+                        <div class="team__link">
+                            <a href="#"><img src="assets/img/twitter-linkk.png" alt=""></a>
+                            <a href="#"><img src="assets/img/facebook-link.png" alt=""></a>
+                            <a href="#"><img src="assets/img/twitter-linkk.png" alt=""></a>
                         </div>
+
                     </div>
-                    <div class="team__card">
-                        <div class="team__progress">
-                            <img src="assets/img/team-progress.png" alt="">
-
-                            <h4>Al Rayhan</h4>
-                            <p>UI/UX Parena</p>
-                            <div class="team__link">
-                                <a href="#"><img src="assets/img/twitter-linkk.png" alt=""></a>
-                                <a href="#"><img src="assets/img/facebook-link.png" alt=""></a>
-                                <a href="#"><img src="assets/img/twitter-linkk.png" alt=""></a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="team__card">
-                        <div class="team__name">
-                            <h4>Ali Sayed</h4>
-                            <p>UI/UX Designer</p>
-                        </div>
+                </div>
+                <div class="team__card">
+                    <div class="team__name">
+                        <h4>Ali Sayed</h4>
+                        <p>UI/UX Designer</p>
                     </div>
                 </div>
             </div>
-        
+        </div>
+
     </section>
 
     <section class="clients">
@@ -255,60 +255,84 @@
                 <p class="clients__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga
                     provident Libero.</p>
             </div>
-
-
-            <div  id="clientsSlider">
-            <div class="clients__item">
-                <div class="clients__card">
-                    <div class="clients__desc">“This was my first time renting from car rental. The service rep help me
-                        find the best rental to suit my needs. I will definitely rent with this company again”</div>
-                    <div class="clients__star">
-                        <img src="assets/img/Star.png" alt="">
+            <div class="swiper-container">
+                <div class=" clients__item swiper-wrapper ">
+                  <div class="swiper-slide">
+                    <div class="clients__card">
+                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
+                            help me
+                            find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="clients__star">
+                            <img src="assets/img/Star.png" alt="">
+                        </div>
+                        <div class="clients__author">
+                            <p>Kita Say,</p> HK Director
+                        </div>
                     </div>
-                    <div class="clients__author">
-                        <p>Kita Say,</p> HK Director
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="clients__card">
+                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
+                            help me
+                            find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="clients__star">
+                            <img src="assets/img/Star.png" alt="">
+                        </div>
+                        <div class="clients__author">
+                            <p>Al Rayhan, </p> UX Director
+                        </div>
                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="clients__card">
+                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
+                            help me
+                            find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="clients__star">
+                            <img src="assets/img/Star.png" alt="">
+                        </div>
+                        <div class="clients__author">
+                            <p>Al Rayhan, </p> UX Director
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="clients__card">
+                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
+                            help me
+                            find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="clients__star">
+                            <img src="assets/img/Star.png" alt="">
+                        </div>
+                        <div class="clients__author">
+                            <p>Al Rayhan, </p> UX Director
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="clients__card">
+                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
+                            help me
+                            find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="clients__star">
+                            <img src="assets/img/Star.png" alt="">
+                        </div>
+                        <div class="clients__author">
+                            <p>Al Rayhan, </p> UX Director
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="clients__card">
-                    <div class="clients__desc">“This was my first time renting from car rental. The service rep help me
-                        find the best rental to suit my needs. I will definitely rent with this company again”</div>
-                    <div class="clients__star">
-                        <img src="assets/img/Star.png" alt="">
-                    </div>
-                    <div class="clients__author">
-                        <p>Al Rayhan, </p> UX Director
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        
-
-
-            <div class="clients__item">
-                <div class="clients__card">
-                    <div class="clients__desc">“This was my first time renting from car rental. The service rep help me
-                        find the best rental to suit my needs. I will definitely rent with this company again”</div>
-                    <div class="clients__star">
-                        <img src="assets/img/Star.png" alt="">
-                    </div>
-                    <div class="clients__author">
-                        <p>Kita Say,</p> HK Director
-                    </div>
-                </div>
-                <div class="clients__card">
-                    <div class="clients__desc">“This was my first time renting from car rental. The service rep help me
-                        find the best rental to suit my needs. I will definitely rent with this company again”</div>
-                    <div class="clients__star">
-                        <img src="assets/img/Star.png" alt="">
-                    </div>
-                    <div class="clients__author">
-                        <p>Al Rayhan, </p> UX Director
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
         </div>
     </section>
 
@@ -332,31 +356,34 @@
 
                 <div class="footer__social">
                     <a href="#">
-                        <img  src="assets/img/facebook-f.png" alt="">
+                        <img src="assets/img/facebook-f.png" alt="">
                     </a>
                     <a href="#">
-                        <img  src="assets/img/twitter-f.png" alt="">
+                        <img src="assets/img/twitter-f.png" alt="">
                     </a>
                     <a href="#">
-                        <img  src="assets/img/brovs-f.png" alt="">
+                        <img src="assets/img/brovs-f.png" alt="">
                     </a>
                     <a href="#">
-                        <img  src="assets/img/be-f.png" alt="">
+                        <img src="assets/img/be-f.png" alt="">
                     </a>
-                    
+
                     <div class="footer__copyright">
                         © 2015 - 2016 Deviserweb Ltd.
                     </div>
-                    
+
                 </div>
 
             </div>
         </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
