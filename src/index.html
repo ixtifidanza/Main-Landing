@@ -8,25 +8,36 @@
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Main Landing</title>
-    
+
 </head>
 
 <body>
+
+    <nav class="nav__menu" id="menu">
+        <a href="#">
+            <img class="header__logo" src="assets/img/Smart.png" alt="">
+        </a>
+
+        <div class="menu-block">
+            <nav class="menu-nav">
+                <a class="menu-nav__link" href="#" data-scroll="#working">Working</a>
+                <a class="menu-nav__link" href="#" data-scroll="#featured">Featured</a>
+                <a class="menu-nav__link" href="#" data-scroll="#services">Services</a>
+                <a class="menu-nav__link" href="#" data-scroll="#team">Team</a>
+                <a class="menu-nav__link" href="#" data-scroll="#clients">Clients</a>
+                <a class="menu-nav__link" href="#" data-scroll="#links">Social</a>
+            </nav>
+            <span class="menu-btn">
+                <span></span>
+            </span>
+        </div>
+
+
+    </nav>
+
     <div class="header">
         <div class="container">
             <header class="header__block">
-                <div class="header__menu">
-                    <a href="#">
-                        <img class="header__logo" src="assets/img/Smart.png" alt="">
-                    </a>
-                    
-                    <button class="burger" type="button" id="navToggle">
-                        <span class="burger__item">Menu</span>
-    
-                    </button>
-
-
-                </div>
                 <div class="header__content">
                     <div class="header__title">
                         <h2 class="title--grey"> <span class="title--red">Smart</span> Agency Landign Page</h2>
@@ -51,7 +62,7 @@
             </header>
         </div>
     </div>
-    <section class="working">
+    <section class="working" id="working">
         <div class="container">
             <div class="working__content">
                 <div class="working__title">
@@ -64,52 +75,63 @@
 
             <div class="working__block">
 
-                <div class="working__card">
-                    <img class="working__img" src="assets/img/itm1.png" alt="">
-                    <div class="working__name">Koc Koi Tomi</div>
-                    <div class="working__text">Lorem ipsum is dummy <br> lorem very dumy</div>
+                <div class="working__item">
+                    <div class="working__card working__card--first">
+                        <img class="working__img" src="assets/img/itm1.png" alt="">
+                        <div class="working__name">Koc Koi Tomi</div>
+                        <div class="working__text">Lorem ipsum is dummy <br> lorem very dumy</div>
 
-                    <button class="working__button">
-                        <img src="assets/img/arrow.png" alt="">
-                        <p>Know More</p>
-                    </button>
+                        <button class="working__button">
+                            <img src="assets/img/arrow.png" alt="">
+                            <p>Know More</p>
+                        </button>
 
+                    </div>
                 </div>
-                <div class="working__card">
 
-                    <img class="working__img" src="assets/img/itm2.png" alt="">
-                    <div class="working__name">Koimona Set</div>
-                    <div class="working__text">Lorem ipsum is dummy you <br> lorem very dumyL is </div>
 
-                    <button class="working__button">
-                        <img src="assets/img/arrow.png" alt="">
-                        <p>Know More</p>
-                    </button>
+                <div class="working__item">
+                    <div class="working__card working__card--purple">
+                        <img class="working__img" src="assets/img/itm2.png" alt="">
+                        <div class="working__name">Koimona Set</div>
+                        <div class="working__text">Lorem ipsum is dummy you <br> lorem very dumyL is </div>
 
+                        <button class="working__button">
+                            <img src="assets/img/arrow.png" alt="">
+                            <p>Know More</p>
+                        </button>
+
+                    </div>
                 </div>
-                <div class="working__card">
 
-                    <img class="working__img" src="assets/img/itm3.png" alt="">
-                    <div class="working__name">Setting Koire</div>
-                    <div class="working__text">Lorem ipsum is dummy <br> lorem very yLorem ipsus </div>
+                <div class="working__item">
+                    <div class="working__card working__card--blue">
 
-                    <button class="working__button">
-                        <img src="assets/img/arrow.png" alt="">
-                        <p>Know More</p>
-                    </button>
+                        <img class="working__img" src="assets/img/itm3.png" alt="">
+                        <div class="working__name">Setting Koire</div>
+                        <div class="working__text">Lorem ipsum is dummy <br> lorem very yLorem ipsus </div>
 
+                        <button class="working__button">
+                            <img src="assets/img/arrow.png" alt="">
+                            <p>Know More</p>
+                        </button>
+
+                    </div>
                 </div>
-                <div class="working__card">
 
-                    <img class="working__img" src="assets/img/itm4.png" alt="">
-                    <div class="working__name">Ko Image Lara</div>
-                    <div class="working__text">Lorem ipsum is dummy <br> ry dumyLorem ipsum is </div>
+                <div class="working__item">
+                    <div class="working__card working__card--red">
 
-                    <button class="working__button">
-                        <img src="assets/img/arrow.png" alt="">
-                        <p>Know More</p>
-                    </button>
+                        <img class="working__img" src="assets/img/itm4.png" alt="">
+                        <div class="working__name">Ko Image Lara</div>
+                        <div class="working__text">Lorem ipsum is dummy <br> ry dumyLorem ipsum is </div>
 
+                        <button class="working__button">
+                            <img src="assets/img/arrow.png" alt="">
+                            <p>Know More</p>
+                        </button>
+
+                    </div>
                 </div>
 
             </div>
@@ -117,7 +139,7 @@
         </div>
     </section>
 
-    <section class="featured">
+    <section class="featured" id="featured">
 
         <div class="container">
 
@@ -144,7 +166,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
 
         <div class="container">
 
@@ -175,43 +197,52 @@
                     <div class="services__card">
                         <img src="assets/img/ser1.png" alt="">
                     </div>
-
                 </div>
-                <div class="services__content">
 
-                    <div class="services__product">
-                        Modern App Design
+                <div class="services__item">
+                    <div class="services__content">
+
+                        <div class="services__product">
+                            Modern App Design
+                        </div>
+                        <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                            earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio
+                            illum consequuntur delectus nulla illo aperiam itaque cumque.
+                        </p>
+
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem
+                            unde facilis.
+                        </p>
+                        <span>vitae eveniet quam rem unde facilis.</span>
+
+                        <button class="services__button">
+                            <img src="assets/img/arrow.png" alt="">
+                            <p>Know More</p>
+                        </button>
                     </div>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-                        earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio
-                        illum consequuntur delectus nulla illo aperiam itaque cumque.
-                    </p>
-
-
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem
-                        unde facilis.
-                    </p>
-                    <span>vitae eveniet quam rem unde facilis.</span>
-
-                    <button class="services__button">
-                        <img src="assets/img/arrow.png" alt="">
-                        <p>Know More</p>
-                    </button>
                 </div>
 
-                <div class="services__img">
-                    <img src="assets/img/apple-watch.png" alt="">
-                </div>
 
+
+
+
+                <div class="services__item">
+                    <div class="services__img">
+                        <img src="assets/img/apple-watch.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
 
+
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
 
         <div class="container">
+
             <div class="team__title title">
                 <h2 class="title--red">Team
                     <span class="title--grey">Chinen & Skills</span>
@@ -221,13 +252,14 @@
                 provident Libero.</div>
 
             <div class="team__item">
+
                 <div class="team__card">
                     <div class="team__name">
                         <h4>Bedi Manos</h4>
                         <p>UI/UX Parena</p>
                     </div>
                 </div>
-                <div class="team__card">
+                <div class="team__card team__card--order">
                     <div class="team__progress">
                         <img src="assets/img/team-progress.png" alt="">
 
@@ -248,11 +280,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
     </section>
 
-    <section class="clients">
+    <section class="clients" id="clients">
         <div class="container">
             <div class="clients__content title">
                 <h2 class="title--red"> Clients <span class="title--grey">Said</span> </h2>
@@ -260,98 +293,116 @@
                     provident Libero.</p>
             </div>
             <div class="slider">
-            <div class="swiper-container">
-                <div class="swiper-wrapper ">
-                  <div class="swiper-slide">
-                    <div class="clients__card">
-                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
-                            help me
-                            find the best rental to suit my needs. I will definitely rent with this company again”
+                <div class="swiper-container swiper-cont">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="clients__card">
+                                <div class="clients__desc">“This was my first time renting from car rental. The service
+                                    rep
+                                    help me
+                                    find the best rental to suit my needs. I will definitely rent with this company
+                                    again”
+                                </div>
+                                <div class="clients__star">
+                                    <img src="assets/img/Star.png" alt="">
+                                </div>
+                                <div class="clients__author">
+                                    <p>Kita Say,</p> HK Director
+                                </div>
+                            </div>
                         </div>
-                        <div class="clients__star">
-                            <img src="assets/img/Star.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="clients__card">
+                                <div class="clients__desc">“This was my first time renting from car rental. The service
+                                    rep
+                                    help me
+                                    find the best rental to suit my needs. I will definitely rent with this company
+                                    again”
+                                </div>
+                                <div class="clients__star">
+                                    <img src="assets/img/Star.png" alt="">
+                                </div>
+                                <div class="clients__author">
+                                    <p>Al Rayhan, </p> UX Director
+                                </div>
+                            </div>
                         </div>
-                        <div class="clients__author">
-                            <p>Kita Say,</p> HK Director
+                        <div class="swiper-slide">
+                            <div class="clients__card">
+                                <div class="clients__desc">“This was my first time renting from car rental. The service
+                                    rep
+                                    help me
+                                    find the best rental to suit my needs. I will definitely rent with this company
+                                    again”
+                                </div>
+                                <div class="clients__star">
+                                    <img src="assets/img/Star.png" alt="">
+                                </div>
+                                <div class="clients__author">
+                                    <p>Al Rayhan, </p> UX Director
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__card">
+                                <div class="clients__desc">“This was my first time renting from car rental. The service
+                                    rep
+                                    help me
+                                    find the best rental to suit my needs. I will definitely rent with this company
+                                    again”
+                                </div>
+                                <div class="clients__star">
+                                    <img src="assets/img/Star.png" alt="">
+                                </div>
+                                <div class="clients__author">
+                                    <p>Al Rayhan, </p> UX Director
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__card">
+                                <div class="clients__desc">“This was my first time renting from car rental. The service
+                                    rep
+                                    help me
+                                    find the best rental to suit my needs. I will definitely rent with this company
+                                    again”
+                                </div>
+                                <div class="clients__star">
+                                    <img src="assets/img/Star.png" alt="">
+                                </div>
+                                <div class="clients__author">
+                                    <p>Al Rayhan, </p> UX Director
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="clients__card">
-                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
-                            help me
-                            find the best rental to suit my needs. I will definitely rent with this company again”
-                        </div>
-                        <div class="clients__star">
-                            <img src="assets/img/Star.png" alt="">
-                        </div>
-                        <div class="clients__author">
-                            <p>Al Rayhan, </p> UX Director
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="clients__card">
-                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
-                            help me
-                            find the best rental to suit my needs. I will definitely rent with this company again”
-                        </div>
-                        <div class="clients__star">
-                            <img src="assets/img/Star.png" alt="">
-                        </div>
-                        <div class="clients__author">
-                            <p>Al Rayhan, </p> UX Director
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="clients__card">
-                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
-                            help me
-                            find the best rental to suit my needs. I will definitely rent with this company again”
-                        </div>
-                        <div class="clients__star">
-                            <img src="assets/img/Star.png" alt="">
-                        </div>
-                        <div class="clients__author">
-                            <p>Al Rayhan, </p> UX Director
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="clients__card">
-                        <div class="clients__desc">“This was my first time renting from car rental. The service rep
-                            help me
-                            find the best rental to suit my needs. I will definitely rent with this company again”
-                        </div>
-                        <div class="clients__star">
-                            <img src="assets/img/Star.png" alt="">
-                        </div>
-                        <div class="clients__author">
-                            <p>Al Rayhan, </p> UX Director
-                        </div>
-                    </div>
-                  </div>
+                  
                 </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="slider__btns">
+                    <div class="prev-btn">
+                        <img src="assets/img/prev.png" alt="">
+                    </div>
+                    <div class="next-btn"><img src="assets/img/prev.png" alt=""></div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-    <section class="links">
+    <section class="links" id="links">
         <div class="container">
             <div class="links__block">
+
                 <a href="#"><img src="assets/img/linkedin.png" alt=""></a>
                 <a href="#"><img src="assets/img/irrible.png" alt=""></a>
                 <a href="#"><img src="assets/img/envato.png" alt=""></a>
+
+
                 <a href="#"><img src="assets/img/linkedin.png" alt=""></a>
                 <a href="#"><img src="assets/img/irrible.png" alt=""></a>
                 <a href="#"><img src="assets/img/envato.png" alt=""></a>
+
             </div>
+
         </div>
     </section>
 
@@ -385,8 +436,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>

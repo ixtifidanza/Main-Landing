@@ -1,7 +1,11 @@
 .clients {
-    padding: 139px 0;
-   
+    padding: 100px 0 0;
+    margin-bottom: 100px;
+    &__content {
+        padding: 0;
+    }
     &__card {
+        
         width: 535px;
         margin-top: 100px;
         box-shadow: 0 0 19px -3px  rgb(77, 77, 104);
@@ -18,7 +22,8 @@
             content: '';
             position: absolute;
             top: -55px ;
-            left: 215px;
+            left: 50%;
+            transform: translate(-50%, 0);
             width: 100px;
             height: 100px;
             
@@ -75,3 +80,65 @@
     -webkit-align-items: center;
     align-items: center;
 }
+.slider {
+    position: relative;
+
+    &__btns {
+        position: absolute;
+        top: 60%;
+        z-index: 9;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    } 
+}
+    
+.next-btn {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    
+    top: 60%;
+    right: -40px;
+
+    border: 12px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 19px -9px  rgb(77, 77, 104);
+    outline: none;
+
+    cursor: pointer;
+    
+    
+    img {
+        transform: rotate(180deg);
+        
+    }
+}
+.prev-btn {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: -10px;
+    top: 60%;
+
+    width: 40px;
+    height: 40px;
+
+    border: 12px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 19px -9px  rgb(77, 77, 104);
+
+    cursor: pointer;
+}
+
+

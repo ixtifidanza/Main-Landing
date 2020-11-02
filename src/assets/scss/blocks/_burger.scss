@@ -1,6 +1,10 @@
 .burger {
     display: block;
     cursor: pointer;
+    border: none;
+    padding: 10px 5px;
+    outline: none;
+    background: none;
 
     &__item {
         display: block;
@@ -24,7 +28,7 @@
             background-color: #706b73;
             left: 0;
             z-index: 1;
-            cursor: pointer;
+            
             top: -8px;
         }
 
@@ -37,7 +41,7 @@
             background-color: #706b73;
             left: 0;
             z-index: 1;
-            cursor: pointer;
+            // cursor: pointer;
             bottom: -8px;
         }
 

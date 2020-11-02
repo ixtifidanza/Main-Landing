@@ -10,10 +10,13 @@
         
         border: none;
         border-radius: 35px;
-        
+        transition: .3s linear;
 
-        background-color: #fff;
-        box-shadow: 0 0 15px -10px  rgb(77, 77, 104);
+        &:hover {
+            box-shadow: 0 0 39px -6px  rgb(77, 77, 104);
+            background-color: #fff;
+
+        }
         
 
         cursor: pointer;
