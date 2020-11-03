@@ -1042,6 +1042,14 @@ body {
 }
 
 @media (max-width: 1200px) {
+    .nav__menu {
+        left: -20px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
     .working__block {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1068,6 +1076,20 @@ body {
 
     .working__title {
         margin-top: 80px;
+    }
+
+    .next-btn {
+        top: 100%;
+        -webkit-transform: translate(-460px, 180px);
+        -ms-transform: translate(-460px, 180px);
+        transform: translate(-460px, 180px);
+    }
+
+    .prev-btn {
+        top: 100%;
+        -webkit-transform: translate(180px, -460px);
+        -ms-transform: translate(180px, -460px);
+        transform: translate(180px, -460px);
     }
 }
 
