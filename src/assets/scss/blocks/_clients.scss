@@ -143,12 +143,19 @@
 
 @media (max-width: 1200px) {
     .next-btn {
-        top: 100%;
-        transform: translate(-460px, 180px);
+       
+       right: 0;
     }
     .prev-btn {
-        top: 100%;
-        transform: translate(180px, -460px);
+        left: 20px;
+      
+    }
+}
+@media (max-width: 568px) {
+    .clients {
+        &__card {
+            
+        }
     }
 }
 

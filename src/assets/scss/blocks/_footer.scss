@@ -17,18 +17,18 @@
             background-color: #fff;
 
         }
+       
         
 
         cursor: pointer;
 
         
     }
-    &__social {
-        
+    &__link {
         display: flex;
         justify-content:center;
         align-items: center;
-        margin: 50px 0;
+        margin: 25px 0;
     }
     &__social a{
         background-color: #d3d3d3;
@@ -49,11 +49,22 @@
         }
     }
     &__copyright {
-        margin-left: 25px;
+        display: flex;
+        justify-content: center;
         color: #ababab;
     }
+}
 
-   
+@media(max-width: 568px) {
+    .footer {
+        &__social {
+            flex-direction: column;
+        }
+        &__link {
+            display: flex;
+            margin-bottom: 20px;
+        }   
+    }
 }
     
        

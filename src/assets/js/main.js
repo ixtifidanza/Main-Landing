@@ -12,11 +12,6 @@ $('[data-scroll]').on('click', function(event) {
     }, 2000);
 });
     
-    
-    
-    
-    
-    
     var swiper = new Swiper('.swiper-container', {
        
         slidesPerView: 2,
@@ -27,14 +22,36 @@ $('[data-scroll]').on('click', function(event) {
           nextEl: '.next-btn',
           prevEl: '.prev-btn',
         },
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          },
+         
+        }
+
     });
-    
-    
- 
+
+    var menuLinks = $('.menu-nav__link');
+    var menuNav = $('.menu-nav');
     
       $('.menu-btn').on('click', function() {
         $(this).toggleClass('menu-btn_active');
         $('.menu-nav').toggleClass('menu-nav_active');
+      });
+
+      menuLinks.on('click', function () {
+        if (menuNav.hasClass('menu-nav_active')) {
+            menuNav.removeClass('menu-nav_active');
+            $('.menu-btn').removeClass('menu-nav_active');
+        }
+
       });
     
 });

@@ -18,11 +18,11 @@
 
     &__block {
         display: flex;
-        
+
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 120px 0 140px;  
+        margin: 120px 0 140px;
     }
 
     &__card {
@@ -36,7 +36,7 @@
 
         min-height: 284px;
 
-       
+
 
         background-color: #4eb2f7;
 
@@ -50,7 +50,7 @@
     }
 
     &__card--first {
-       margin-left: 0;
+        margin-left: 0;
     }
 
     &__card--purple {
@@ -117,26 +117,51 @@
 }
 
 @media (max-width: 1200px) {
-        .working {
+    .working {
 
-            &__block {
-                flex-wrap: wrap;
-            }
-            &__item {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-            }
-            &__card--blue,
-            &__card--red {
-                margin-top: 80px;
-            }
-            &__card--blue {
-                margin-left: 0;
-            }
-            &__title {
-                margin-top: 80px;
-            }
-            
+        &__block {
+            flex-wrap: wrap;
         }
+
+        &__item {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__card--blue,
+        &__card--red {
+            margin-top: 80px;
+        }
+
+        &__card--blue {
+            margin-left: 0;
+        }
+
+        &__title {
+            margin-top: 80px;
+        }
+
+    }
+}
+
+@media (max-width: 568px) {
+    .working {
+        &__block {
+            margin: 50px 0;
+        }
+        &__item {
+            width: 100%;
+        }
+
+        &__card--blue,
+        &__card--red,
+        &__card--purple {
+            margin: 35px 0;
+        }
+        &__title {
+            margin-top: 40px;
+        }
+
+    }
 }

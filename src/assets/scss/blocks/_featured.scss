@@ -65,3 +65,10 @@
         }
     }
 }
+@media (max-width: 568px) {
+    .featured {
+        &__content {
+            padding: 40px 0 90px;
+        }
+    }
+}
